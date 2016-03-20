@@ -151,7 +151,8 @@ nav {
   padding-top: 5%;
   color: @primary-fontcolor;
   background-color: @seconday-darkgrey;
-  text-align: left;
+  text-align: center;
+  padding-bottom: 5%;
   h1 {
     margin-left: 3%;
     font-weight: 900;
@@ -159,6 +160,19 @@ nav {
   p {
     margin-left: 3%;
   }
+
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+
+
+  }
+  .photos{
+    max-width: 90%;
+    margin: 0 auto;
+
+  }
+
   .btn-group {
     margin-left: 2.7%;
     min-width: 40%;
@@ -185,28 +199,73 @@ nav {
   padding-top: 7%;
   color: @primary-fontcolor;
   text-align: center;
-  h1,p{
+  padding-bottom: 7%;
+  h1,
+  p {
+    max-width: 90%;
     text-align: left;
-    margin-left: 4%;
+    margin: 0 auto;
+    padding-bottom: 2%;
   }
-}
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
+  p{
+    font-size:1em;
   }
-  .col-4.roundIcon {
-    float: none;
+  .row {
+    max-width: 70%;
     margin: 0 auto;
   }
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .col-4> h2,
+  .col-4 >p,
+  .socials {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .socials {
+    text-align: center;
+    .socialRound {
+      width: 40px;
+      height: 40px;
+      .borderSettings(50%,@primary-fontcolor,2px, solid );
+      float: left;
+      font-size: 20px;
+      .fa {
+        position: relative;
+        top: 13%;
+      }
+      .fa-google-plus {
+        position: relative;
+        left: 5%;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+  width: 100%;
+  }
+
+}
+@media only screen and (min-width: 500px) and (max-width:767px) {
+  [class*="col-m-"] {
+  width: 50%;
+  }
+  .photos{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
 }
 @media only screen and (min-width: 768px) and (max-width:980px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 50%;
-  }
-  .col-4.roundIcon {
-    float: none;
-    margin: 0 auto;
-  }
+
+
+}
+@media only screen and (min-width:981px) {
+
 }
